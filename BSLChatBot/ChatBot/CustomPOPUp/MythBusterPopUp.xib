@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Montserrat-Medium.otf">
+            <string>Montserrat-Medium</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" restorationIdentifier="MythBusterPopUp" id="iN0-l3-epB" customClass="MythBusterPopUp" customModule="BSLChatBot" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="200" height="300"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kBY-55-X44">
+                    <rect key="frame" x="145" y="1" width="50" height="50"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="50" id="Ef0-nf-gnm"/>
+                        <constraint firstAttribute="height" constant="50" id="zJD-L2-l9d"/>
+                    </constraints>
+                    <state key="normal" image="CrossIconPopUp"/>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WAA-8Z-tfu">
+                    <rect key="frame" x="25" y="149" width="150" height="112"/>
+                    <fontDescription key="fontDescription" name="Montserrat-Medium" family="Montserrat" pointSize="13"/>
+                    <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="GkQ-Dm-5hR">
+                    <rect key="frame" x="50" y="49" width="100" height="100"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="100" id="bqw-40-ph7"/>
+                        <constraint firstAttribute="height" constant="100" id="rjv-Vo-zxb"/>
+                    </constraints>
+                </imageView>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="kBY-55-X44" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="1" id="2oG-kK-IFG"/>
+                <constraint firstItem="GkQ-Dm-5hR" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="Amd-WW-2W5"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="WAA-8Z-tfu" secondAttribute="trailing" constant="25" id="DB9-eA-EBI"/>
+                <constraint firstItem="WAA-8Z-tfu" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="25" id="Mui-2P-4EP"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="WAA-8Z-tfu" secondAttribute="bottom" constant="5" id="Y5T-Wf-Bkq"/>
+                <constraint firstAttribute="trailing" secondItem="kBY-55-X44" secondAttribute="trailing" constant="5" id="oQe-qr-YRt"/>
+                <constraint firstItem="WAA-8Z-tfu" firstAttribute="top" secondItem="GkQ-Dm-5hR" secondAttribute="bottom" id="puz-pP-FEL"/>
+                <constraint firstItem="GkQ-Dm-5hR" firstAttribute="top" secondItem="kBY-55-X44" secondAttribute="bottom" constant="-2" id="ylf-sA-Q5B"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <connections>
+                <outlet property="crossBttn" destination="kBY-55-X44" id="2Dj-Kp-cvt"/>
+                <outlet property="imgView" destination="GkQ-Dm-5hR" id="1I5-Ey-onf"/>
+                <outlet property="mythLbl" destination="WAA-8Z-tfu" id="dLH-DK-xTz"/>
+            </connections>
+            <point key="canvasLocation" x="47.826086956521742" y="63.616071428571423"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="CrossIconPopUp" width="40" height="40"/>
+    </resources>
+</document>

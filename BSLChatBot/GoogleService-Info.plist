@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>780535809920-2c7jetvo3k4d03od8ubi7mgmmgtk8ia7.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.780535809920-2c7jetvo3k4d03od8ubi7mgmmgtk8ia7</string>
+	<key>API_KEY</key>
+	<string>AIzaSyD_4xM0fGBOrpR0U_FA_IvvottMJk_kgXk</string>
+	<key>GCM_SENDER_ID</key>
+	<string>780535809920</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>com.bluestarindia.hrbot</string>
+	<key>PROJECT_ID</key>
+	<string>hrbot-givdrn</string>
+	<key>STORAGE_BUCKET</key>
+	<string>hrbot-givdrn.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:780535809920:ios:d8a33d3f01ba03b9e46365</string>
+	<key>DATABASE_URL</key>
+	<string>https://hrbot-givdrn.firebaseio.com</string>
+</dict>
+</plist>

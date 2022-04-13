@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Montserrat-Regular.otf">
+            <string>Montserrat-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" restorationIdentifier="SOSPopUp" id="iN0-l3-epB" customClass="SOSPopUp" customModule="BSLChatBot" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="150" height="300"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JpU-OL-xsr">
+                    <rect key="frame" x="104" y="6" width="40" height="40"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="40" id="Be7-Af-xE3"/>
+                        <constraint firstAttribute="height" constant="40" id="scE-H1-7r8"/>
+                    </constraints>
+                    <state key="normal" backgroundImage="CrossIconPopUp"/>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ABU-b5-x0T">
+                    <rect key="frame" x="25" y="51" width="100" height="20"/>
+                    <fontDescription key="fontDescription" name="Montserrat-Regular" family="Montserrat" pointSize="16"/>
+                    <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7Hc-a8-PyL">
+                    <rect key="frame" x="47.5" y="191" width="55" height="55"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="55" id="Mwj-rO-ean"/>
+                        <constraint firstAttribute="height" constant="55" id="PBZ-bW-dHi"/>
+                    </constraints>
+                    <state key="normal" backgroundImage="SOSSquareButton"/>
+                </button>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="7Hc-a8-PyL" secondAttribute="bottom" constant="20" id="3MO-za-mTh"/>
+                <constraint firstAttribute="trailing" secondItem="JpU-OL-xsr" secondAttribute="trailing" constant="6" id="IEl-17-yRg"/>
+                <constraint firstItem="ABU-b5-x0T" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="25" id="YWA-Rl-1o3"/>
+                <constraint firstItem="7Hc-a8-PyL" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="bIs-nZ-Pqv"/>
+                <constraint firstItem="ABU-b5-x0T" firstAttribute="top" secondItem="JpU-OL-xsr" secondAttribute="bottom" constant="5" id="dXz-as-FOs"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="ABU-b5-x0T" secondAttribute="trailing" constant="25" id="nku-dH-2Su"/>
+                <constraint firstItem="JpU-OL-xsr" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="6" id="sul-At-zDC"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <connections>
+                <outlet property="crossBttn" destination="JpU-OL-xsr" id="bxv-2q-gkN"/>
+                <outlet property="sosBttn" destination="7Hc-a8-PyL" id="7m7-VW-0oF"/>
+                <outlet property="txtLbl" destination="ABU-b5-x0T" id="25K-uO-U2d"/>
+            </connections>
+            <point key="canvasLocation" x="47.826086956521742" y="35.491071428571423"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="CrossIconPopUp" width="40" height="40"/>
+        <image name="SOSSquareButton" width="109" height="109"/>
+    </resources>
+</document>

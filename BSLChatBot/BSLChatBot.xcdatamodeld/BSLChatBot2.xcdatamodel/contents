@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="19574" systemVersion="20G314" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+    <entity name="ExpressoUtilityEntity" representedClassName="ExpressoUtilityEntity" syncable="YES" codeGenerationType="class">
+        <attribute name="attribute_id" optional="YES" attributeType="String"/>
+        <attribute name="commentsCount" optional="YES" attributeType="String"/>
+        <attribute name="likeCount" optional="YES" attributeType="String"/>
+        <attribute name="likeStatus" optional="YES" attributeType="Boolean" usesScalarValueType="YES"/>
+    </entity>
+    <entity name="NewsletterEntity" representedClassName="NewsletterEntity" syncable="YES" codeGenerationType="class">
+        <attribute name="attribute_id" optional="YES" attributeType="String"/>
+        <attribute name="attribute_markUnread" optional="YES" attributeType="Boolean" usesScalarValueType="YES"/>
+        <attribute name="category" optional="YES" attributeType="String"/>
+        <attribute name="date" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="dateHeader" optional="YES" attributeType="String"/>
+        <attribute name="descriptions" optional="YES" attributeType="String"/>
+        <attribute name="footerImageURL" optional="YES" attributeType="String"/>
+        <attribute name="headerImageURL" optional="YES" attributeType="String"/>
+        <attribute name="newsletterBy" optional="YES" attributeType="String"/>
+        <attribute name="src" optional="YES" attributeType="String"/>
+        <attribute name="subtitle" optional="YES" attributeType="String"/>
+        <attribute name="title" optional="YES" attributeType="String"/>
+        <attribute name="videoURL" optional="YES" attributeType="String"/>
+    </entity>
+    <entity name="NotificationEntity" representedClassName="NotificationEntity" syncable="YES" codeGenerationType="class">
+        <attribute name="attribute_datetime" optional="YES" attributeType="String"/>
+        <attribute name="attribute_externalURL" optional="YES" attributeType="String"/>
+        <attribute name="attribute_id" optional="YES" attributeType="String"/>
+        <attribute name="attribute_imageURL" optional="YES" attributeType="String"/>
+        <attribute name="attribute_longMessage" optional="YES" attributeType="String"/>
+        <attribute name="attribute_markUnread" optional="YES" attributeType="Boolean" usesScalarValueType="YES"/>
+        <attribute name="attribute_pushMessage" optional="YES" attributeType="String"/>
+        <attribute name="attribute_title" optional="YES" attributeType="String"/>
+    </entity>
+    <entity name="ProspExpressoUtilityEntity" representedClassName="ProspExpressoUtilityEntity" syncable="YES" codeGenerationType="class">
+        <attribute name="attribute_id" optional="YES" attributeType="String"/>
+        <attribute name="commentsCount" optional="YES" attributeType="String"/>
+        <attribute name="likeCount" optional="YES" attributeType="String"/>
+        <attribute name="likeStatus" optional="YES" attributeType="Boolean" usesScalarValueType="YES"/>
+    </entity>
+    <entity name="ProspNewsletterEntity" representedClassName="ProspNewsletterEntity" syncable="YES" codeGenerationType="class">
+        <attribute name="attribute_id" optional="YES" attributeType="String"/>
+        <attribute name="attribute_markUnread" optional="YES" attributeType="Boolean" usesScalarValueType="YES"/>
+        <attribute name="category" optional="YES" attributeType="String"/>
+        <attribute name="date" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="dateHeader" optional="YES" attributeType="String"/>
+        <attribute name="descriptions" optional="YES" attributeType="String"/>
+        <attribute name="footerImageURL" optional="YES" attributeType="String"/>
+        <attribute name="headerImageURL" optional="YES" attributeType="String"/>
+        <attribute name="newsletterBy" optional="YES" attributeType="String"/>
+        <attribute name="src" optional="YES" attributeType="String"/>
+        <attribute name="subtitle" optional="YES" attributeType="String"/>
+        <attribute name="title" optional="YES" attributeType="String"/>
+        <attribute name="videoURL" optional="YES" attributeType="String"/>
+    </entity>
+    <entity name="ProspNotificationEntity" representedClassName="ProspNotificationEntity" syncable="YES" codeGenerationType="class">
+        <attribute name="attribute_datetime" optional="YES" attributeType="String"/>
+        <attribute name="attribute_externalURL" optional="YES" attributeType="String"/>
+        <attribute name="attribute_id" optional="YES" attributeType="String"/>
+        <attribute name="attribute_imageURL" optional="YES" attributeType="String"/>
+        <attribute name="attribute_longMessage" optional="YES" attributeType="String"/>
+        <attribute name="attribute_markUnread" optional="YES" attributeType="Boolean" usesScalarValueType="YES"/>
+        <attribute name="attribute_pushMessage" optional="YES" attributeType="String"/>
+        <attribute name="attribute_title" optional="YES" attributeType="String"/>
+    </entity>
+    <configuration name="Configuration"/>
+    <elements>
+        <element name="ExpressoUtilityEntity" positionX="48.5899658203125" positionY="39.3675537109375" width="128" height="103"/>
+        <element name="NewsletterEntity" positionX="-110.3782958984375" positionY="39.83169555664062" width="128" height="238"/>
+        <element name="NotificationEntity" positionX="-275.1915283203125" positionY="39.27833557128906" width="128" height="163"/>
+        <element name="ProspNotificationEntity" positionX="53.458740234375" positionY="165.4666137695312" width="128" height="149"/>
+        <element name="ProspNewsletterEntity" positionX="-63" positionY="207" width="128" height="224"/>
+        <element name="ProspExpressoUtilityEntity" positionX="-54" positionY="252" width="128" height="89"/>
+    </elements>
+</model>

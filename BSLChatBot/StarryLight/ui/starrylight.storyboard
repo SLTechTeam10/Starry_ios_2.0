@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19162" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19144"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Montserrat-Medium.otf">
+            <string>Montserrat-Medium</string>
+        </array>
+        <array key="Montserrat-Regular.otf">
+            <string>Montserrat-Regular</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--Welcome Screen View Controller-->
+        <scene sceneID="GRM-uO-LTx">
+            <objects>
+                <viewController storyboardIdentifier="WelcomeScreenSL1" id="vId-Lz-XU4" customClass="BSSLWelcomeScreenViewController" customModule="BSLChatBot" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Gek-GE-ppW">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="welcome_vector_final" translatesAutoresizingMaskIntoConstraints="NO" id="tfc-QZ-d5y">
+                                <rect key="frame" x="-8" y="0.0" width="422" height="612"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="wave_sh" translatesAutoresizingMaskIntoConstraints="NO" id="YFV-SR-e5P">
+                                <rect key="frame" x="0.0" y="596" width="414" height="300"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="300" id="duB-3i-FKH"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hi Starry!" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Rrj-Tl-26c">
+                                <rect key="frame" x="25" y="722" width="386" height="28"/>
+                                <fontDescription key="fontDescription" name="Montserrat-Medium" family="Montserrat" pointSize="24"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hi Starry!" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UlG-Ly-nOC">
+                                <rect key="frame" x="25" y="775" width="386" height="21"/>
+                                <fontDescription key="fontDescription" name="Montserrat-Regular" family="Montserrat" pointSize="18"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="v75-KK-3dh">
+                                <rect key="frame" x="334" y="666" width="55" height="55"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="55" id="DZV-IU-3WJ"/>
+                                    <constraint firstAttribute="width" constant="55" id="ytT-Mq-SIU"/>
+                                </constraints>
+                                <inset key="titleEdgeInsets" minX="0.0" minY="7" maxX="0.0" maxY="0.0"/>
+                                <state key="normal" image="welcome_arrow_new"/>
+                                <connections>
+                                    <action selector="chatBot:" destination="vId-Lz-XU4" eventType="touchUpInside" id="yrk-0M-5lL"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="vtr-BN-kXt"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="Rrj-Tl-26c" firstAttribute="top" secondItem="v75-KK-3dh" secondAttribute="bottom" constant="1" id="9Am-gh-iDn"/>
+                            <constraint firstItem="tfc-QZ-d5y" firstAttribute="leadingMargin" secondItem="Gek-GE-ppW" secondAttribute="leading" id="FTc-VZ-lmL"/>
+                            <constraint firstItem="tfc-QZ-d5y" firstAttribute="trailing" secondItem="Gek-GE-ppW" secondAttribute="trailing" id="HFC-f1-omu"/>
+                            <constraint firstItem="YFV-SR-e5P" firstAttribute="topMargin" secondItem="tfc-QZ-d5y" secondAttribute="bottomMargin" id="IWR-oA-bmj"/>
+                            <constraint firstItem="vtr-BN-kXt" firstAttribute="trailing" secondItem="v75-KK-3dh" secondAttribute="trailing" constant="25" id="LN7-VC-gG5"/>
+                            <constraint firstItem="vtr-BN-kXt" firstAttribute="trailing" secondItem="UlG-Ly-nOC" secondAttribute="trailing" constant="3" id="LW1-sK-USU"/>
+                            <constraint firstItem="UlG-Ly-nOC" firstAttribute="leading" secondItem="vtr-BN-kXt" secondAttribute="leading" constant="25" id="Lrx-N4-Xde"/>
+                            <constraint firstItem="YFV-SR-e5P" firstAttribute="bottom" secondItem="Gek-GE-ppW" secondAttribute="bottom" id="MrT-nb-fSq"/>
+                            <constraint firstItem="vtr-BN-kXt" firstAttribute="trailing" secondItem="Rrj-Tl-26c" secondAttribute="trailing" constant="3" id="OeA-C9-MTq"/>
+                            <constraint firstItem="tfc-QZ-d5y" firstAttribute="top" secondItem="Gek-GE-ppW" secondAttribute="top" id="S5m-VC-GJ6"/>
+                            <constraint firstItem="YFV-SR-e5P" firstAttribute="trailing" secondItem="vtr-BN-kXt" secondAttribute="trailing" id="d6C-Pg-T2M"/>
+                            <constraint firstItem="YFV-SR-e5P" firstAttribute="leading" secondItem="vtr-BN-kXt" secondAttribute="leading" id="s2n-4P-Wfg"/>
+                            <constraint firstItem="Rrj-Tl-26c" firstAttribute="leading" secondItem="vtr-BN-kXt" secondAttribute="leading" constant="25" id="uH6-hR-DHb"/>
+                            <constraint firstItem="v75-KK-3dh" firstAttribute="top" secondItem="YFV-SR-e5P" secondAttribute="top" constant="70" id="vm7-Ev-wo8"/>
+                            <constraint firstItem="UlG-Ly-nOC" firstAttribute="top" secondItem="Rrj-Tl-26c" secondAttribute="bottom" constant="25" id="zoJ-MJ-0da"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="btnHeightConstraint" destination="DZV-IU-3WJ" id="SVL-dq-WVe"/>
+                        <outlet property="btnTopAlignConstraint" destination="vm7-Ev-wo8" id="TCy-zA-FZ6"/>
+                        <outlet property="btnWidthConstraint" destination="ytT-Mq-SIU" id="n0d-7Y-Mxb"/>
+                        <outlet property="nextBtn" destination="v75-KK-3dh" id="ecv-T7-JmV"/>
+                        <outlet property="waveImage" destination="YFV-SR-e5P" id="1PE-yb-dsy"/>
+                        <outlet property="waveImageHeightConstraint" destination="duB-3i-FKH" id="WWp-gl-GGI"/>
+                        <outlet property="welcomeSubLabel" destination="UlG-Ly-nOC" id="h8G-Av-GRE"/>
+                        <outlet property="welcomeUserNameLbl" destination="Rrj-Tl-26c" id="qH1-fd-PUN"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dp8-bF-w2x" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="162" y="-989"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="wave_sh" width="375" height="256.5"/>
+        <image name="welcome_arrow_new" width="75" height="75"/>
+        <image name="welcome_vector_final" width="512" height="494.5"/>
+    </resources>
+</document>
